@@ -5,7 +5,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    1
 
 Summary:    Build-time support for C<XS::Parse::Keyword>
 License:    GPLv1+ or Artistic
@@ -19,6 +19,7 @@ BuildRequires: perl(ExtUtils::ParseXS) >= 3.160.0
 BuildRequires: perl(Module::Build) >= 0.400.400
 BuildRequires: perl(Test::More) >= 0.880.0
 BuildRequires: perl-devel
+
 %description
 This module provides some XS functions to assist in writing syntax modules
 that provide new perl-visible syntax, primarily for authors of keyword
