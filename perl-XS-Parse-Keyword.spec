@@ -47,6 +47,6 @@ requiring changes or at least a rebuild of any module that depends on it.
 ./Build install --destdir=%{buildroot}
 
 %files
-%doc Changes LICENSE META.json META.yml MYMETA.yml README
+%doc Changes LICENSE META.json META.yml README
 %{_mandir}/man3/*
 %perl_vendorarch/*
