@@ -1,24 +1,22 @@
-%define _empty_manifest_terminate_build 0
 %define upstream_name    XS-Parse-Keyword
-%define upstream_version 0.24
 
 %{?perl_default_filter}
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    0.46
+Release:    1
 
 Summary:    Build-time support for C<XS::Parse::Keyword>
 License:    GPLv1+ or Artistic
 Group:      Development/Perl
 Url:        https://metacpan.org/release/%{upstream_name}
-Source0:    https://www.cpan.org/modules/by-module/XS/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/P/PE/PEVANS/XS-Parse-Keyword-%{version}.tar.gz
 
 BuildRequires: perl(ExtUtils::CBuilder)
-BuildRequires: perl(ExtUtils::CChecker) >= 0.110.0
-BuildRequires: perl(ExtUtils::ParseXS) >= 3.160.0
-BuildRequires: perl(Module::Build) >= 0.400.400
-BuildRequires: perl(Test::More) >= 0.880.0
+BuildRequires: perl(ExtUtils::CChecker)
+BuildRequires: perl(ExtUtils::ParseXS)
+BuildRequires: perl(Module::Build)
+BuildRequires: perl(Test::More)
 BuildRequires: perl-devel
 
 %description
@@ -34,7 +32,7 @@ evolving and subject to change. Later versions may break ABI compatibility,
 requiring changes or at least a rebuild of any module that depends on it.
 
 %prep
-%autosetup -p1 -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Build.PL --installdirs=vendor
