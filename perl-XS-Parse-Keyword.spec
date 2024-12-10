@@ -3,7 +3,7 @@
 %{?perl_default_filter}
 
 Name:       perl-%{upstream_name}
-Version:    0.46
+Version:    0.47
 Release:    1
 
 Summary:    Build-time support for C<XS::Parse::Keyword>
