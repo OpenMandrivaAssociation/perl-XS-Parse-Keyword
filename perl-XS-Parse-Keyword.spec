@@ -4,7 +4,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    0.47
-Release:    2
+Release:    3
 
 Summary:    Build-time support for C<XS::Parse::Keyword>
 License:    GPLv1+ or Artistic
