@@ -3,8 +3,8 @@
 %{?perl_default_filter}
 
 Name:       perl-%{upstream_name}
-Version:    0.47
-Release:    3
+Version:    0.49
+Release:    1
 
 Summary:    Build-time support for C<XS::Parse::Keyword>
 License:    GPLv1+ or Artistic
@@ -32,7 +32,7 @@ evolving and subject to change. Later versions may break ABI compatibility,
 requiring changes or at least a rebuild of any module that depends on it.
 
 %prep
-%autosetup -p1 -n %{upstream_name}-%{version}
+%autosetup -p1 -n XS-Parse-Keyword-0.49
 
 %build
 %{__perl} Build.PL --installdirs=vendor
